@@ -28,4 +28,6 @@ then
 fi
 ln -s ${HOME}/dotfiles/.config/nvim/init.vim ${HOME}/.config/nvim/init.vim
 nvim -c PlugInstall -c q -c q
-
+#to enable codeium, authorize it
+yes | apt install firefox
+nvim -c "Codeium Auth"
