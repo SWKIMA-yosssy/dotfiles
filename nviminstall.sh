@@ -3,6 +3,7 @@
 #because of the necessity to install neovim 0.8+ for deno and ddc.vim's require do not use apt in installing
 cd ${HOME}
 #this is version 0.9.5
+apt install wget
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 mv nvim-linux64.tar.gz /bin
 cd /bin
