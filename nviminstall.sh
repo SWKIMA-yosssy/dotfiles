@@ -23,7 +23,6 @@ curl -fsSL https://deno.land/install.sh | sh
 echo "export DENO_INSTALL=${HOME}/.deno" >> ${HOME}/.bashrc
 echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> ${HOME}/.bashrc
 source ~/.bashrc
-source ~/.bashrc
 
 #put symbolic link
 if [ ! -d ${HOME}/.config/nvim ]
@@ -31,6 +30,7 @@ then
 	mkdir -p ${HOME}/.config/nvim
 fi
 ln -s ${HOME}/dotfiles/.config/nvim/init.vim ${HOME}/.config/nvim/init.vim
+source ~/.bashrc
 nvim -c PlugInstall -c q -c q
 #to enable codeium, authorize it
 nvim -c "Codeium Auth"
