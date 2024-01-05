@@ -24,8 +24,6 @@ echo "export DENO_INSTALL=${HOME}/.deno" >> ${HOME}/.bashrc
 echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> ${HOME}/.bashrc
 source ${HOME}/.bashrc
 
-bash -i
-
 #put symbolic link
 if [ ! -d ${HOME}/.config/nvim ]
 then
