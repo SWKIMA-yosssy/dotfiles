@@ -23,6 +23,7 @@ curl -fsSL https://deno.land/install.sh | sh
 echo "export DENO_INSTALL=${HOME}/.deno" >> ${HOME}/.bashrc
 echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> ${HOME}/.bashrc
 source ~/.bashrc
+source ~/.bashrc
 
 #put symbolic link
 if [ ! -d ${HOME}/.config/nvim ]
