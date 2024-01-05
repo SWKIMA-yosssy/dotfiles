@@ -1,5 +1,5 @@
 set number
-set autoindent
+set smartindent
 set matchtime=1
 set ignorecase
 set incsearch
@@ -11,6 +11,16 @@ inoremap <expr><CR> pumvisible() ? "<C-y>" : "<CR>"
 
 syntax on
 colorscheme koehler
+"ファイルタイプ検出をオン
+filetype on
+augroup vimrc
+	autocmd!
+
+	"if filetype is C/C++/Java cindent on
+	autocmd FileType c,cpp,java setl cindent
+	autocmd FileType c,cpp,java setl expandtab tabstop=4 shiftwidth=4 softtabstop=4 shiftround
+augroup END
+
 call plug#begin()
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/Shougo/unite.vim'
