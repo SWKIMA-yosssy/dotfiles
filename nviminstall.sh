@@ -20,6 +20,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 #install deno to use ddc.vim
 yes|apt install unzip #this need to do following line
 curl -fsSL https://deno.land/install.sh | sh
+echo "export DENO_INSTALL=${HOME}/.deno" >> ${HOME}/.bashrc
+echo "export PATH="${DENO_INSTALL}/bin:$PATH"" >> ${HOME}/.bashrc
+source ~/.bashrc
 
 #put symbolic link
 if [ ! -d ${HOME}/.config/nvim ]
