@@ -31,6 +31,7 @@ then
 fi
 ln -s ${HOME}/dotfiles/.config/nvim/init.vim ${HOME}/.config/nvim/init.vim
 source ~/.bashrc
+echo close() |deno --version
 nvim -c PlugInstall -c q -c q
 #to enable codeium, authorize it
 nvim -c "Codeium Auth"
