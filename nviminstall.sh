@@ -4,12 +4,8 @@
 cd ${HOME}
 #this is version 0.9.5
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
-if [ ! -d ${HOME}/.local/bin]
-then
-	mkdir -p /.local/bin
-fi
-mv nvim-linux64.tar.gz ${HOME}/.local/bin
-cd .local/bin
+mv nvim-linux64.tar.gz /bin
+cd /bin
 tar xzvf nvim-linux64.tar.gz
 rm -fr nvim-linux64.tar.gz
 ln -s ./nvim-linux64/bin/nvim ./nvim
