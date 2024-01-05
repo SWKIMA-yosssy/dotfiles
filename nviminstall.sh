@@ -22,7 +22,7 @@ yes|apt install unzip #this need to do following line
 curl -fsSL https://deno.land/install.sh | sh
 
 #put symbolic link
-if [ ! -d ${HOME}/.config/nvim]
+if [ ! -d ${HOME}/.config/nvim ]
 then
 	mkdir -p ${HOME}/.config/nvim
 fi
