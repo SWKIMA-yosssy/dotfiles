@@ -34,4 +34,4 @@ nvim -c PlugInstall -c q -c q
 #to enable codeium, authorize it
 nvim -c "Codeium Auth"
 
-#WARNING you must run source ~/.bashrc to install deno properly
+#WARNING you must run source ./start.sh to install deno properly
