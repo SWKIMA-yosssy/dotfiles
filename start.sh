@@ -8,7 +8,7 @@ then #if dotfiles does not exist in homedir.
 	echo "error:dotfiles does not exists proper position, must be home/USER/dotfiles"
 else
 	cd ${HOME}/dotfiles
-	./cenv.sh
-	./nviminstall.sh
+	source ./cenv.sh
+	source ./nviminstall.sh
 fi
 
