@@ -36,6 +36,8 @@ Plug 'Shougo/ddc-matcher_head'
 " AI tool Codeium installation
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 call plug#end()
+"codeium をデフォルトでオフ
+vim.g.codeium_enabled = false
 
 "使いたいUIの設定
 call ddc#custom#patch_global('ui', 'native')
