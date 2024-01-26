@@ -37,7 +37,7 @@ Plug 'Shougo/ddc-matcher_head'
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 call plug#end()
 "codeium をデフォルトでオフ
-vim.g.codeium_enabled = false
+let g:codeium_enabled = v:false
 
 "使いたいUIの設定
 call ddc#custom#patch_global('ui', 'native')
