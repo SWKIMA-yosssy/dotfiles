@@ -6,6 +6,7 @@ set incsearch
 set laststatus=2
 set statusline=%F%m%w\ %<%=[FMT=%{&ff}](%Y)
 set completeopt=menuone,noinsert
+set mouse=
 "補完表示時のEnterで改行しない
 "[FORNVIMMER]inoremap <expr><CR> pumvisible() ? "<C-y>" : "<CR>"
 
