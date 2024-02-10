@@ -12,4 +12,5 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 eval "$(starship init zsh)"
