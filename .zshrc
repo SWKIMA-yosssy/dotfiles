@@ -18,7 +18,7 @@ eval "$(starship init zsh)"
 #Alias
 
 if type exa >/dev/null 2>&1; then
-  alias e='exa -la'
+  alias e='exa'
 fi
 
 if type bat >/dev/null 2>&1; then
