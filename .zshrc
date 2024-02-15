@@ -14,3 +14,13 @@ compinit
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 eval "$(starship init zsh)"
+
+#Alias
+
+if type exa >/dev/null 2>&1; then
+  alias e='exa -la'
+fi
+
+if type bat >/dev/null 2>&1; then
+  alias b='bat'
+fi
