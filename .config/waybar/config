@@ -65,7 +65,7 @@
         "format": "  {:%I:%M %p}"
     },
     "network": {
-        "format-wifi" : "{icon}",
+        "format-wifi" : "{icon} {essid}",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
         "format-ethernet": "󰀂",
 	"format-alt" : "󱛇",
